@@ -1,0 +1,30 @@
+# Dependencies and local tooling
+node_modules/
+.netlify/
+
+# Secrets and environment files — never commit these
+.env
+.env.*
+!.env.example
+
+# Keys, seeds, and similar private material
+*.pem
+*.key
+*.p12
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*secret*
+*seed*phrase*
+*.wallet
+*.json.gz
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
