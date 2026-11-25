@@ -17,6 +17,7 @@ Planned hosting, once accounts are connected and the user approves: a **private 
 | `site/` | Publish directory (the only files Netlify should serve) |
 | `site/index.html` | Home: static three-column hero, identity cards, live story counter, transparency link |
 | `site/projects.html` | StillComp, DoublePenny, CHOMP |
+| `site/gallery.html` | The Oddity Gallery: original mascots, oddity variants, and shared-universe scenes |
 | `site/story.html` | How the identities connect |
 | `site/updates.html` | Dated public posts and on-chain events |
 | `site/disclosure.html` | Risk wording, disclosure, and the Transparency section |
