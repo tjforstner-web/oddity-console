@@ -719,7 +719,7 @@ a:focus-visible, button:focus-visible, .logo:focus-visible {
 .update-item p { margin: 0; color: var(--muted); }
 
 @media (max-width: 900px) {
-  .cards, .quick-links, .account-list, .project-block, .hero-cols {
+  .cards, .quick-links, .account-list, .project-block, .hero-cols, .gallery-grid {
     grid-template-columns: 1fr;
   }
   .quick-links { gap: 0; }
@@ -822,3 +822,78 @@ a:focus-visible, button:focus-visible, .logo:focus-visible {
 .update-item .meta { margin: 0 0 0.3rem; color: var(--muted); font-size: 0.82rem; }
 .update-item .source { margin: 0.55rem 0 0; font-size: 0.82rem; }
 .update-item .source a { color: var(--neon-text); }
+
+/* The Oddity Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0 0.5rem;
+}
+.gallery-card {
+  margin: 0;
+  background: #000;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 28px rgba(108, 255, 53, 0.08);
+}
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: #050805;
+}
+.gallery-card figcaption,
+.gallery-card h3 {
+  margin: 0;
+  padding: 0.65rem 0.8rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-hud);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--neon-text);
+  text-align: center;
+  font-weight: 700;
+}
+.gallery-placeholder-card {
+  background: var(--bg-card);
+}
+.gallery-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--gold-bright);
+  background: rgba(80, 50, 0, 0.28);
+  border-bottom: 1px dashed var(--gold);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+.gallery-motto {
+  margin: 2.5rem auto 0;
+  max-width: 36rem;
+  padding: 1.2rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  text-align: center;
+}
+.gallery-motto p {
+  margin: 0;
+  font-family: var(--font-hud);
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  color: var(--gold-bright);
+}
+.gallery-motto footer {
+  margin-top: 0.55rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
