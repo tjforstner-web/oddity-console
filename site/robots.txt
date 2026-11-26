@@ -1,3 +1,5 @@
-# This is a private draft. Remove or change this file before a public launch.
+# Public Oddity Console site.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://tjforstner-web.github.io/oddity-console/sitemap.xml

@@ -4,7 +4,7 @@
    To hide them on every page before publishing, uncomment the next rule.
    Leave it commented (the default) to keep the notices on.
    ======================================================================== */
-/* .draft-notice { display: none !important; } */
+.draft-notice { display: none !important; }
 
 /* Oddity Console — draft styles. Palette follows the hero animation: black grid, neon green, gold. */
 :root {
