@@ -926,3 +926,71 @@ a:focus-visible, button:focus-visible, .logo:focus-visible {
   color: var(--gold-bright);
   font-weight: 700;
 }
+
+/* CHOMP official identification poster */
+#chomp.project-block {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#chomp .project-intro {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+#chomp .id-file {
+  margin: 1.25rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  width: 100%;
+}
+#chomp .id-file img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#chomp .id-file figcaption {
+  max-width: 800px;
+  margin: 0.85rem auto 0;
+}
+#chomp .id-file-title {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-hud);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--neon-text);
+  text-align: center;
+  font-weight: 700;
+}
+#chomp .id-file figcaption > p:not(.id-file-title) {
+  margin: 0;
+}
+
+/* Featured single-item gallery row (official identification) */
+.gallery-grid.gallery-feature {
+  grid-template-columns: minmax(0, 26rem);
+}
+.gallery-feature .gallery-card img {
+  height: auto;
+  aspect-ratio: 1;
+}
+.gallery-card figcaption {
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  #chomp .project-intro {
+    grid-template-columns: 1fr;
+  }
+  /* Re-assert after the later .gallery-grid { repeat(3, 1fr) } rule */
+  .gallery-grid,
+  .gallery-grid.gallery-feature {
+    grid-template-columns: 1fr;
+  }
+}
